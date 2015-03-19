@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/report"
+        android:layout_alignRight="@+id/report" >
+
+        <com.weibo.view.widget.RoundCornerImageView
+            android:id="@+id/myhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/myhead"
+            android:text="TextView"
+            android:textColor="#424242"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/ctime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/myhead"
+            android:text="TextView"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ctime"
+            android:layout_alignBottom="@+id/ctime"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/ctime"
+            android:text="TextView"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/top"
+        android:layout_below="@+id/top" >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:autoLink="all"
+            android:text="TextView"
+            android:textColor="#424242"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/middle"
+        android:background="#F7F7F7"
+        android:layout_marginTop="8dp"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/reporttextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/titlebar"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/reporttextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reporttextView1"
+            android:layout_marginTop="5dp"
+            android:text="TextView"
+            android:textColor="#424242"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/reportlinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reporttextView2"
+            android:orientation="horizontal" >
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/item_image_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/item_image_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/item_image_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reportlinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reportlinearLayout1"
+            android:orientation="horizontal" >
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/item_image_4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/item_image_5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/item_image_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reportlinearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reportlinearLayout2"
+            android:orientation="horizontal" >
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/item_image_7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/item_image_8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/item_image_9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

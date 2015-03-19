@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="ZrcAbsListView">
+        <attr name="android:listSelector"/>
+        <attr name="android:drawSelectorOnTop"/>
+        <attr name="android:stackFromBottom"/>
+        <attr name="android:scrollingCache"/>
+        <attr name="android:transcriptMode" />
+        <attr name="android:cacheColorHint"/>
+        <attr name="android:smoothScrollbar"/>
+        <attr name="android:choiceMode" />
+    </declare-styleable>
+    <declare-styleable name="ListView">
+        <attr name="android:entries" />
+        <attr name="android:divider"/>
+        <attr name="android:dividerHeight" />
+        <attr name="android:headerDividersEnabled"/>
+        <attr name="android:footerDividersEnabled"/>
+        <attr name="android:overScrollHeader"/>
+        <attr name="android:overScrollFooter"/>
+    </declare-styleable>
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="MyRadioButton">
+        <attr name="pic" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MyHeadImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+    <attr name="mybackground" format="reference|color" />
+    <attr name="maintop" format="dimension" />
+    <attr name="toptextcolor" format="color" />
+    <attr name="welcomeback" format="reference|color"></attr>
+    <attr name="weibomainback" format="reference|color"></attr>
+     <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+</resources>

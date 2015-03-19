@@ -1,0 +1,118 @@
+<resources>
+
+    <string name="app_name">minions</string>
+    <string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_home">首页</string>
+    <string name="main_news">消息</string>
+    <string name="main_my_info">我</string>
+    <string name="menu_search">搜索</string>
+    <string name="soft">应用</string>
+    <string name="more">更多</string>
+    <string name="home">大厅</string>
+    <string name="account">用户</string>
+    <string name="loading">正在登陆...</string>
+    <string name="reg">正在注册...</string>
+    <string name="other">加载数据中...</string>
+    <string name="app_close">关闭应用程序</string>
+    <string name="btn_cancel">取 消</string>
+    <string name="btn_ok">确 定</string>
+    <string name="actionbar_activity_not_found">Failed to open intent...</string>
+    <string name="share_by_weixin">微信分享</string>
+    <string name="share_by_qq">QQ分享</string>
+    <string name="share_by_yixin">易信分享</string>
+    <string name="shake_share">注册摇一摇截图->分享</string>
+    <string name="shake_openshare">注册摇一摇打开分享面板</string>
+    <string name="shake_scrshot">注册摇一摇截图</string>
+    <string name="take_scrshot">直接截图</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="stop">停止</string>
+    <string name="quit">退出</string>
+    <string name="video_start_time">00:00</string>
+    <string name="goto_video">摇一摇视频截图Activity</string>
+    <string name="goto_game">游戏Activity</string>
+    <string name="goto_common">普通Activity</string>
+    <string name="video">VideoActivity</string>
+    <string name="game">GameActivity</string>
+    <string name="common">CommonActivity</string>
+    <string name="back">返回</string>
+    <string name="goto_facebook">添加Facebook分享</string>
+    <string name="fb_login">Facebook登录</string>
+    <string name="fb_logout">Facebook注销</string>
+    <string name="fb_share">Facebook分享</string>
+    <string name="laiwang_share">来往分享</string>
+    <string name="instagram_share">Instagram分享</string>
+    <string name="fb_app_id">567261760019884</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating Facebook status at </string>
+    <string name="ok">OK</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="GetResquestKey_resquest_key">/WeiBoService/GetResquestKey?action=resquest_key</string>
+    <string name="UserLogin_login">/WeiBoService/UserLogin?action=login</string>
+    <string name="RegisterNewUser_register">/WeiBoService/RegisterNewUser?action=register</string>
+    <string name="WeiboStatuses_get_public_timeline">/WeiBoService/WeiboStatuses?action=get_public_timeline</string>
+    <string name="WeiboStatuses_get_friends_timeline">/WeiBoService/WeiboStatuses?action=get_friends_timeline</string>
+    <string name="WeiboStatuses_get_user_timeline">/WeiBoService/WeiboStatuses?action=get_user_timeline</string>
+    <string name="WeiboStatuses_mentions_feed">/WeiBoService/WeiboStatuses?action=mentions_feed</string>
+    <string name="WeiboStatuses_show">/WeiBoService/WeiboStatuses?action=show</string>
+    <string name="WeiboStatuses_update">/WeiBoService/WeiboStatuses?action=update</string>
+    <string name="WeiboStatuses_upload">/WeiBoService/WeiboStatuses?action=upload</string>
+    <string name="WeiboStatuses_destroy">/WeiBoService/WeiboStatuses?action=destroy</string>
+    <string name="WeiboStatuses_repost">/WeiBoService/WeiboStatuses?action=repost</string>
+    <string name="WeiboStatuses_comments">/WeiBoService/WeiboStatuses?action=comments</string>
+    <string name="WeiboStatuses_comments_to_me">/WeiBoService/WeiboStatuses?action=comments_to_me</string>
+    <string name="WeiboStatuses_comments_by_me">/WeiBoService/WeiboStatuses?action=comments_by_me</string>
+    <string name="WeiboStatuses_comment">/WeiBoService/WeiboStatuses?action=comment</string>
+    <string name="WeiboStatuses_favorite_create">/WeiBoService/WeiboStatuses?action=favorite_create</string>
+    <string name="WeiboStatuses_favorite_destroy">/WeiBoService/WeiboStatuses?action=favorite_destroy</string>
+    <string name="WeiboStatuses_weibo_search_user">/WeiBoService/WeiboStatuses?action=weibo_search_user</string>
+    <string name="WeiboStatuses_weibo_search_weibo">/WeiBoService/WeiboStatuses?action=weibo_search_weibo</string>
+    <string name="WeiboStatuses_add_digg">/WeiBoService/WeiboStatuses?action=add_digg</string>
+    <string name="WeiboStatuses_delete_digg">/WeiBoService/WeiboStatuses?action=delete_digg</string>
+    <string name="WeiboStatuses_favorite_feed">/WeiBoService/WeiboStatuses?action=favorite_feed</string>
+    <string name="WeiboStatuses_search_topic">/WeiBoService/WeiboStatuses?action=search_topic</string>
+    <string name="WeiboStatuses_get_uid">/WeiBoService/WeiboStatuses?action=get_uid</string>
+    <string name="Channel_get_all_channel">/WeiBoService/Channel?action=get_all_channel</string>
+    <string name="Channel_get_channel_feed">/WeiBoService/Channel?action=get_channel_feed</string>
+    <string name="Message_get_message_list">/WeiBoService/Message?action=get_message_list</string>
+    <string name="Message_get_message_detail">/WeiBoService/Message?action=get_message_detail</string>
+    <string name="Message_create">/WeiBoService/Message?action=create</string>
+    <string name="Message_reply">/WeiBoService/Message?action=reply</string>
+    <string name="Message_get_list_id">/WeiBoService/Message?action=get_list_id</string>
+    <string name="User_show">/WeiBoService/User?action=show</string>
+    <string name="User_upload_face">/WeiBoService/User?action=upload_face</string>
+    <string name="User_user_followers">/WeiBoService/User?action=user_followers</string>
+    <string name="User_user_following">/WeiBoService/User?action=user_following</string>
+    <string name="User_user_friends">/WeiBoService/User?action=user_friends</string>
+    <string name="User_follow_create">/WeiBoService/User?action=follow_create</string>
+    <string name="User_follow_destroy">/WeiBoService/User?action=follow_destroy</string>
+    <string name="User_insert_location">/WeiBoService/User?action=insert_location</string>
+    <string name="User_get_nearby_person">/WeiBoService/User?action=get_nearby_person</string>
+    <string name="Weiba_get_weibas">/WeiBoService/Weiba?action=get_weibas</string>
+    <string name="Weiba_create">/WeiBoService/Weiba?action=create</string>
+    <string name="Weiba_destroy">/WeiBoService/Weiba?action=destroy</string>
+    <string name="Weiba_get_posts">/WeiBoService/Weiba?action=get_posts</string>
+    <string name="Weiba_create_post">/WeiBoService/Weiba?action=create_post</string>
+    <string name="Weiba_post_detail">/WeiBoService/Weiba?action=post_detail</string>
+    <string name="Weiba_comment_list">/WeiBoService/Weiba?action=comment_list</string>
+    <string name="Weiba_comment_post">/WeiBoService/Weiba?action=comment_post</string>
+    <string name="Weiba_reply_comment">/WeiBoService/Weiba?action=reply_comment</string>
+    <string name="Weiba_delete_comment">/WeiBoService/Weiba?action=delete_comment</string>
+    <string name="Weiba_following_posts">/WeiBoService/Weiba?action=following_posts</string>
+    <string name="Weiba_posteds">/WeiBoService/Weiba?action=posteds</string>
+    <string name="Weiba_search_weiba">/WeiBoService/Weiba?action=search_weiba</string>
+    <string name="Weiba_search_post">/WeiBoService/Weiba?action=search_post</string>
+    <string name="Weiba_post_favorite">/WeiBoService/Weiba?action=post_favorite</string>
+    <string name="Weiba_post_unfavorite">/WeiBoService/Weiba?action=post_unfavorite</string>
+    <string name="Weiba_favorite_list">/WeiBoService/Weiba?action=favorite_list</string>
+    <string name="Weiba_commenteds">/WeiBoService/Weiba?action=commenteds</string>
+    <string name="Checkin_get_check_info">/WeiBoService/Checkin?action=get_check_info</string>
+    <string name="Checkin_checkin">/WeiBoService/Checkin?action=checkin</string>
+
+</resources>

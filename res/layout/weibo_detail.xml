@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?weibomainback" >
+
+    <RelativeLayout
+        android:id="@+id/weibotop"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white" >
+        <com.weibo.view.widget.RoundCornerImageView
+            android:id="@+id/imageView1"
+            android:layout_width="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="ThinkSnS"
+            android:textColor="#030303"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="123"
+            android:textColor="#AAAAAA"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="来自火星"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/iii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weibotop"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:autoLink="all"
+            android:text="thinksns"
+            android:textColor="#030303" />
+
+        <RelativeLayout
+            android:id="@+id/lll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/item_image_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/item_image_2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/item_image_3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:orientation="horizontal" >
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/item_image_4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/item_image_5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/item_image_6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:orientation="horizontal" >
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/item_image_7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/item_image_8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/item_image_9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lll"
+            android:background="#F4F4F4"
+            android:padding="9dp" >
+
+            <TextView
+                android:id="@+id/reporttextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wwww"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/titlebar"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reporttextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reporttextView1"
+                android:layout_marginTop="8dp"
+                android:text="www"
+                android:textColor="#424242"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/reportlinearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reporttextView2"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/reitem_image_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/reitem_image_2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/reitem_image_3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reportlinearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reportlinearLayout1"
+                android:layout_weight="0"
+                android:orientation="horizontal" >
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/reitem_image_4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/reitem_image_5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/reitem_image_6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reportlinearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reportlinearLayout2"
+                android:orientation="horizontal" >
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/reitem_image_7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/reitem_image_8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/reitem_image_9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

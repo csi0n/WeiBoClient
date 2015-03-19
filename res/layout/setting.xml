@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="?weibomainback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="?mybackground" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="更多"
+            android:textColor="?toptextcolor"
+            android:textSize="?maintop" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top_relative"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_bg"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/myqr"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.44"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/navigationbar_account_edit"
+                android:drawableRight="@drawable/next"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="    我的二维码" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/grey" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.44"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/navigationbar_account_edit"
+                android:drawableRight="@drawable/next"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="    设置" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/grey" />
+
+            <Button
+                android:id="@+id/theme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.44"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/aboutweibo"
+                android:drawableRight="@drawable/next"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="    主题" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/grey" />
+
+            <Button
+                android:id="@+id/lock"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.44"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/aboutweibo"
+                android:drawableRight="@drawable/next"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="    锁屏设置" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_bg"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.44"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/aboutweibo"
+                android:drawableRight="@drawable/next"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="    关于" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/grey" />
+
+            <Button
+                android:id="@+id/myweiba"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.44"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/aboutweibo"
+                android:drawableRight="@drawable/next"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="    我的微吧管理" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/grey" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.20"
+                android:background="@drawable/btn_style_my"
+                android:text="退出登陆"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    
+
+</ScrollView>

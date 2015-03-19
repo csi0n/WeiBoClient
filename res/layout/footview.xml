@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <ImageButton
+        android:id="@+id/share_imagechoose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/imagechoosebutton_bg"
+        android:contentDescription="@string/app_name" >
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/share_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/share_word_counter"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/loadingwait"
+        android:visibility="gone" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/share_word_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:text="140"
+        android:textColor="@color/black"
+        android:textSize="14.0sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/biaoqingbtn"
+        android:src="@drawable/loadingwait"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/biaoqingbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/share_imagechoose"
+        android:background="@drawable/imagebiaoqing_bg" />
+
+    <ImageButton
+        android:id="@+id/huatibtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/biaoqingbtn"
+        android:background="@drawable/imagehuati_bg" />
+
+    <ImageButton
+        android:id="@+id/findmebtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/huatibtn"
+        android:background="@drawable/imagefind_me" />
+
+</RelativeLayout>

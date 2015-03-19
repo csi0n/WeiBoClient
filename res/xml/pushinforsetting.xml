@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.api.MyPreference>
+    </com.api.MyPreference>
+    <CheckBoxPreference
+        android:enabled="true"
+        android:widgetLayout="@layout/cust_checkbox"
+        android:key="SETTINGS_NOTIFICATION_ENABLED"
+        android:summary="获取通知消息"
+        android:title="通知中心开启" />
+    <CheckBoxPreference
+        android:enabled="true"
+        android:key="SETTINGS_SOUND_ENABLED"
+        android:widgetLayout="@layout/cust_checkbox"
+        android:summary="声音"
+        android:summaryOff="关闭声音"
+        android:summaryOn="打开声音"
+        android:title="声音" />
+    <CheckBoxPreference
+        android:enabled="true"
+        android:key="SETTINGS_VIBRATE_ENABLED"
+        android:widgetLayout="@layout/cust_checkbox"
+        android:summary="震动"
+        android:summaryOff="关闭震动"
+        android:summaryOn="开启震动"
+        android:title="震动" />
+    <CheckBoxPreference
+        android:enabled="true"
+        android:key="SETTINGS_Flag_ENABLED"
+        android:widgetLayout="@layout/cust_checkbox"
+        android:summary="悬浮窗"
+        android:summaryOff="关闭悬浮窗"
+        android:summaryOn="开启悬浮窗"
+        android:title="悬浮窗" />
+</PreferenceScreen>

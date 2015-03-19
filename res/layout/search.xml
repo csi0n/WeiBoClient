@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?weibomainback" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+
+            <ImageView
+                android:id="@+id/titleBg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="?mybackground" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="发现"
+                android:textColor="?toptextcolor"
+                android:textSize="?maintop" />
+
+            <ImageView
+                android:id="@+id/mark_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/group_edit_member_more" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/top_relative"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#54a6fb"
+                android:drawableTop="@drawable/add_person_pic"
+                android:paddingTop="10dp"
+                android:text="用户搜索"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#fb903a"
+                android:drawableTop="@drawable/search"
+                android:paddingTop="10dp"
+                android:text="微博搜索"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#f985c9"
+                android:drawableTop="@drawable/pd"
+                android:paddingTop="10dp"
+                android:text="频道列表"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout1"
+            android:background="@drawable/round_bg"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/weibalist"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:text="微吧列表" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="@color/grey" />
+
+            <Button
+                android:id="@+id/near"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/near_by_pic"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:text="附近的人" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="@color/grey" />
+
+            <Button
+                android:id="@+id/saoyisao"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/near_by_pic"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:text="扫一扫" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="@color/grey" />
+
+            <Button
+                android:id="@+id/weather"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/near_by_pic"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:text="今日天气" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="@color/grey" />
+
+            <Button
+                android:id="@+id/near_send"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style_my"
+                android:drawableLeft="@drawable/near_by_pic"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:text="文件近传" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

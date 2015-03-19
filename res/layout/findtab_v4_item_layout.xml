@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="vertical" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_background_imageview_effect_equalizer_handpick_voice" >
+    </com.loopj.android.image.SmartImageView>
+
+</LinearLayout>

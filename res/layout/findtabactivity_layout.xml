@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?weibomainback" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="?mybackground" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="发现"
+            android:textColor="@color/white"
+            android:textSize="?maintop" />
+    </RelativeLayout>
+
+    <com.weibo.view.widget.NewScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top_relative" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/viewGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="微博搜索"
+                android:textColor="@color/black2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/weibosearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/findtab_relativa_selector" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/findfriend_icon_search" />
+
+                    <TextView
+                        android:id="@+id/weibosearchcachecount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="11dp"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:gravity="center"
+                        android:text="共有0条记录"
+                        android:textSize="9dp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:gravity="center"
+                        android:text="搜索微博"
+                        android:textColor="@color/yellow"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:src="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/usersearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/findtab_relativa_selector" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/findfriend_icon_popolarroots" />
+
+                    <TextView
+                        android:id="@+id/usersearchcachecount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textsearch"
+                        android:layout_marginLeft="11dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:gravity="center"
+                        android:text="共有0条记录"
+                        android:textSize="9dp" />
+
+                    <TextView
+                        android:id="@+id/textsearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:gravity="center"
+                        android:text="搜索用户"
+                        android:textColor="@color/titlebar"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="更多玩法"
+                android:textColor="@color/black2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/nearperson"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/findtab_relativa_selector"
+                    android:orientation="horizontal"
+                    android:textColor="@color/white" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/findfriend_icon_around" />
+
+                        <TextView
+                            android:id="@+id/qq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imageView4"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/imageView4"
+                            android:gravity="center"
+                            android:text="附近的人"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imageView4"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/qq"
+                            android:gravity="center"
+                            android:text="快告訴朋友我在哪吧"
+                            android:textColor="@color/black2"
+                            android:textSize="8dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/find_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@color/black2" />
+
+                <LinearLayout
+                    android:id="@+id/saoyisao"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/findtab_relativa_selector"
+                    android:orientation="horizontal"
+                    android:textColor="@color/white" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/imagesaoyisao"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/qr" />
+
+                        <TextView
+                            android:id="@+id/imagetext1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imagesaoyisao"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/imagesaoyisao"
+                            android:gravity="center"
+                            android:text="扫一扫"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imagesaoyisao"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/imagetext1"
+                            android:gravity="center"
+                            android:text="快速添加好友"
+                            android:textColor="@color/black2"
+                            android:textSize="8dp" />
+
+                        <ImageView
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/find_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@color/black2" />
+
+                <LinearLayout
+                    android:id="@+id/weiba"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/findtab_relativa_selector"
+                    android:orientation="horizontal"
+                    android:textColor="@color/white" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/imageweiba"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/weiba_small" />
+
+                        <TextView
+                            android:id="@+id/webatext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imageweiba"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/imageweiba"
+                            android:gravity="center"
+                            android:text="微吧"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imageweiba"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/webatext"
+                            android:gravity="center"
+                            android:text="与朋友更多的交流"
+                            android:textColor="@color/black2"
+                            android:textSize="8dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/find_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@color/black2" />
+
+                <LinearLayout
+                    android:id="@+id/channel"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/findtab_relativa_selector"
+                    android:orientation="horizontal"
+                    android:textColor="@color/white" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/imagechannel"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/weiba_small" />
+
+                        <TextView
+                            android:id="@+id/channeltext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imagechannel"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/imagechannel"
+                            android:gravity="center"
+                            android:text="频道"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imagechannel"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/channeltext"
+                            android:gravity="center"
+                            android:text="与朋友更多的交流"
+                            android:textColor="@color/black2"
+                            android:textSize="8dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/find_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@color/black2" />
+
+                <LinearLayout
+                    android:id="@+id/weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/findtab_relativa_selector"
+                    android:orientation="horizontal"
+                    android:textColor="@color/white" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/imageweather"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/push_icon_app_small_1" />
+
+                        <TextView
+                            android:id="@+id/weathertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imageweather"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/imageweather"
+                            android:gravity="center"
+                            android:text="今日天气"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/imageweather"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/weathertext"
+                            android:gravity="center"
+                            android:text="几天天气怎样？"
+                            android:textColor="@color/black2"
+                            android:textSize="8dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/find_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.weibo.view.widget.NewScrollView>
+
+</RelativeLayout>

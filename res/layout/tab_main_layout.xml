@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/console_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?mybackground"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_tab_home"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/icon_home_d"
+                android:focusable="true"
+                android:paddingBottom="3dp"
+                android:text="@string/main_home"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/main_tab_message"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_meassage"
+                android:paddingBottom="3dp"
+                android:text="@string/main_news"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/send"
+                style="@style/main_tab_bottom"
+                android:paddingBottom="3dp"
+                android:src="@drawable/map_select_mask2" />
+
+            <Button
+                android:id="@+id/main_tab_search"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_square"
+                android:paddingBottom="3dp"
+                android:text="发现"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/main_tab_self"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/icon_selfinfo"
+                android:paddingBottom="3dp"
+                android:text="@string/main_my_info"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>
